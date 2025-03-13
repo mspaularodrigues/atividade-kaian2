@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Delícia</title>
+
+    <!-- Link para o Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Link para o Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header animate__animated animate__fadeIn">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeIn animate__delay-1s">Restaurante Delícia</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrossel de Imagens -->
+    <section id="home" class="carousel">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://dwsemanadedesign.com.br/wp-content/uploads/2022/12/pingyangsp_1681758139_3083133193474159437_56007568342.jpg" alt="Imagem 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.carpemundi.com.br/wp-content/uploads/2020/08/restaurantes-melhores-vistas-sao-paulo.jpg" alt="Imagem 2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://cms-cdn.saipos.com/assets/2024/08/08/Tamanho-Banner-HTML-38-1_uid_66b4be9718096.png" alt="Imagem 3">
+                </div>
+            </div>
+            <!-- Adicionando botões de navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Seção de Menu -->
+    <section id="menu" class="menu animate__animated animate__fadeInUp">
+        <div class="container">
+            <h2>Nosso Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item animate__animated animate__zoomIn">
+                    <h3>Prato 1</h3>
+                    <p>Descrição do prato 1.</p>
+                </div>
+                <div class="menu-item animate__animated animate__zoomIn animate__delay-1s">
+                    <h3>Prato 2</h3>
+                    <p>Descrição do prato 2.</p>
+                </div>
+                <div class="menu-item animate__animated animate__zoomIn animate__delay-2s">
+                    <h3>Prato 3</h3>
+                    <p>Descrição do prato 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="contato animate__animated animate__fadeInUp">
+        <div class="container-contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Restaurante Delícia - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Inicialização do Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
+
+</body>
+</html>
